@@ -24,7 +24,11 @@
           </form>
         </li>
       </ul>
-      <button class="button primary-btn mt-2" v-on:click="resetFilter">
+      <button
+        v-bind:disabled="isDisabled"
+        class="btn button primary-btn mt-2 btn-disabled"
+        v-on:click="resetFilter"
+      >
         очистить
       </button>
     </div>
@@ -34,21 +38,28 @@
 <script>
 export default {
   name: "FilterComponents",
+  data() {
+    return {
+      isDisabled: true,
+    };
+  },
   props: {
     categories: {
       type: Array,
     },
   },
   emits: {
-    "choose-category": (value) => typeof value === "object",
+    "choose-category": (value) => typeof value === "object" ?? null,
   },
   methods: {
     chooseCategory(item) {
+      this.isDisabled = false;
       this.$emit("choose-category", item);
     },
     resetFilter() {
       this.chooseCategory(null);
       document.querySelector('input[type="radio"]:checked').checked = false;
+      this.isDisabled = true;
     },
   },
 };

@@ -28,7 +28,7 @@ export default {
   name: "PopularProduct",
   props: {
     products: {
-      type: Object,
+      type: Array,
       required: true,
     },
     title: {

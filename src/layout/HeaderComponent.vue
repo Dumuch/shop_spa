@@ -4,7 +4,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <router-link class="navbar-brand logo_h" to="/">
-            <img src="img/logo.png" alt="" />Название сайта
+            <img src="img/logo.png" alt="" />Shop SPA
           </router-link>
           <button
             class="navbar-toggler"
