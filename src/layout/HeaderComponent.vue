@@ -6,23 +6,7 @@
           <router-link class="navbar-brand logo_h" to="/">
             <img src="img/logo.png" alt="" />Shop SPA
           </router-link>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse offset"
-            id="navbarSupportedContent"
-          >
+          <div class="navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
               <li
                 v-bind:class="{ active: item.active }"

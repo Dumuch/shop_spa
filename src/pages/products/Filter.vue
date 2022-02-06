@@ -26,7 +26,7 @@
       </ul>
       <button
         v-bind:disabled="isDisabled"
-        class="btn button primary-btn mt-2 btn-disabled"
+        class="btn button primary-btn mt-3 mb-3"
         v-on:click="resetFilter"
       >
         очистить
