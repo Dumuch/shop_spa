@@ -6,6 +6,8 @@
         class="card-img"
         v-bind:src="product.base_image.large_image_url"
         alt=""
+        width="300"
+        height="200"
       />
     </div>
     <div class="card-body">
